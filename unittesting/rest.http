@@ -1,0 +1,20 @@
+### read the data
+
+GET http://localhost:4004/odata/v4/employee-management/Employees HTTP/1.1
+
+### read the data in v2
+
+GET http://localhost:4004/v2/odata/v4/employee-management/Employees 
+
+### post the data
+
+POST http://localhost:4004/v2/odata/v4/employee-management/Employees 
+Content-Type: application/json
+
+{
+  "ID": "123",
+  "NAME": "John",
+  "EMAIL_ID": "john.doe@example.com",
+  "PHONE_ID": "8867355584",
+  "AGE": "27"
+}
